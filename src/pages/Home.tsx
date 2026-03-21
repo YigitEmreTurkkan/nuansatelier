@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Leaf, Info } from 'lucide-react';
+import { ArrowRight, Sparkles, Leaf, Info, Instagram, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 import finishedImg from '../assets/finished.png';
@@ -142,6 +142,15 @@ const Home = () => {
                 >
                     Kendin Yap Setini Al <ArrowRight size={18} />
                 </a>
+
+                <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8">
+                    <a href="https://instagram.com/atelier.nuans" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[#FDFBF7] hover:text-[#EAE3DB] opacity-80 hover:opacity-100 transition-all font-light">
+                        <Instagram size={20} /> <span className="tracking-wide">@atelier.nuans</span>
+                    </a>
+                    <a href="mailto:nuansateleirx@gmail.com" className="flex items-center gap-2 text-[#FDFBF7] hover:text-[#EAE3DB] opacity-80 hover:opacity-100 transition-all font-light">
+                        <Mail size={20} /> <span className="tracking-wide">nuansateleirx@gmail.com</span>
+                    </a>
+                </div>
             </section>
         </div>
     );

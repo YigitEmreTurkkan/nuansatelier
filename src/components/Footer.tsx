@@ -1,3 +1,5 @@
+import { Instagram, Mail } from 'lucide-react';
+
 const Footer = () => {
     return (
         <footer className="bg-[#F6F3EE] border-t border-[#EAE3DB] mt-20">
@@ -6,6 +8,15 @@ const Footer = () => {
                 <p className="text-[#8A7968] text-sm text-center max-w-md mb-8">
                     Anadolu'nun zengin doğasından ilham alan, sağlığınıza saygılı vegan soya mumları ile yaşam alanlarınıza saflık katın.
                 </p>
+
+                <div className="flex gap-6 mb-8 text-[#5C5A58]">
+                    <a href="https://instagram.com/atelier.nuans" target="_blank" rel="noopener noreferrer" className="hover:text-[#3A3836] transition-colors" aria-label="Instagram">
+                        <Instagram size={22} />
+                    </a>
+                    <a href="mailto:nuansateleirx@gmail.com" className="hover:text-[#3A3836] transition-colors" aria-label="Email">
+                        <Mail size={22} />
+                    </a>
+                </div>
 
                 <div className="flex space-x-6 mb-8 text-sm text-[#5C5A58]">
                     <a href="/hikayemiz" className="hover:text-[#3A3836] transition-colors">Hikayemiz</a>
