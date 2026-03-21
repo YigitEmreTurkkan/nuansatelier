@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Leaf, Instagram, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
+import kitImg from '../assets/kit.png';
 import finishedImg from '../assets/finished.png';
 
 const Home = () => {
@@ -25,49 +26,69 @@ const Home = () => {
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FDFBF7]/40 to-[#FDFBF7]"></div>
                 </div>
 
-                <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8 }}
-                        className="mb-4 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FDFBF7]/80 backdrop-blur-sm border border-[#EAE3DB] text-[#5C5A58] text-sm font-medium"
-                    >
-                        <Sparkles size={14} className="text-[#8A7968]" />
-                        Kendi An'ınızı Yaratın
-                    </motion.div>
-
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-5xl md:text-7xl font-serif text-[#3A3836] drop-shadow-sm mb-6 leading-tight"
-                    >
-                        Saflıkla Gelen <br /> <span className="text-[#8A7968]">Dinginlik</span>
-                    </motion.h1>
-
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.4 }}
-                        className="text-lg md:text-xl text-[#5C5A58] mb-10 max-w-2xl font-light"
-                    >
-                        Anadolu'nun endemik bitki örtüsünden gelen doğal esanslar ve vegan soya mumlarıyla, yaşam alanlarınızı şifalandırın.
-                    </motion.p>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.8, delay: 0.6 }}
-                        className="flex justify-center"
-                    >
-                        <a
-                            href="https://www.shopier.com/nuansatelier"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="px-8 py-4 bg-[#3A3836] text-[#FDFBF7] rounded-full font-medium hover:bg-[#2A2928] shadow-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2"
+                <div className="relative z-10 px-4 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+                    {/* Text Column */}
+                    <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8 }}
+                            className="mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FDFBF7]/80 backdrop-blur-sm border border-[#EAE3DB] text-[#8A7968] text-sm font-medium"
                         >
-                            Ürünlere Git <ArrowRight size={18} />
-                        </a>
+                            <Sparkles size={14} />
+                            DIY Soya Mumu Setleri
+                        </motion.div>
+
+                        <motion.h1
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.2 }}
+                            className="text-5xl md:text-7xl font-serif text-[#3A3836] drop-shadow-sm mb-6 leading-tight"
+                        >
+                            Saflıkla Gelen <br /> <span className="text-[#8A7968]">Dinginlik</span>
+                        </motion.h1>
+
+                        <motion.p
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.4 }}
+                            className="text-lg md:text-xl text-[#5C5A58] mb-8 max-w-xl font-light"
+                        >
+                            Kendi mumunuzu yaratarak yaşam alanlarınızı şifalandırın. Tamamen doğal vegan wax ve Anadolu'nun endemik esanslarıyla hazırlanan %100 çevre dostu döküm setleri.
+                        </motion.p>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.6 }}
+                            className="flex justify-center md:justify-start w-full"
+                        >
+                            <a
+                                href="https://www.shopier.com/nuansatelier"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-8 py-4 bg-[#3A3836] text-[#FDFBF7] rounded-full font-medium hover:bg-[#2A2928] shadow-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2"
+                            >
+                                Tüm Setleri İncele <ArrowRight size={18} />
+                            </a>
+                        </motion.div>
+                    </div>
+
+                    {/* Image Column */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, delay: 0.3 }}
+                        className="md:w-1/2 flex justify-center md:justify-end mt-12 md:mt-0"
+                    >
+                        <div className="relative w-full max-w-md">
+                            <div className="absolute inset-0 bg-gradient-to-tr from-[#EAE3DB] to-[#D0C5B9] rounded-[2rem] transform rotate-3 scale-105 opacity-60 blur-xl"></div>
+                            <img
+                                src={kitImg}
+                                alt="Nüans Atelier DIY Kendin Yap Soya Mumu Seti"
+                                className="relative z-10 w-full object-cover rounded-[2rem] shadow-2xl border border-white/60"
+                            />
+                        </div>
                     </motion.div>
                 </div>
             </section>
