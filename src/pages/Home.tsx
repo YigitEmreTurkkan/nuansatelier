@@ -8,11 +8,21 @@ const Home = () => {
     return (
         <div className="flex flex-col min-h-screen">
             {/* Hero Section */}
-            <section className="relative w-full min-h-[60vh] py-24 flex items-center justify-center overflow-hidden bg-[#F6F3EE]">
-                <div className="absolute inset-0 z-0 opacity-60">
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_#D0C5B9_0%,_transparent_50%)]"></div>
-                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_#EAE3DB_0%,_transparent_50%)]"></div>
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#FDFBF7]"></div>
+            <section className="relative w-full min-h-[60vh] py-24 flex items-center justify-center overflow-hidden bg-[#FDFBF7]">
+                {/* Premium Aura Background */}
+                <div className="absolute inset-0 z-0 overflow-hidden">
+                    <motion.div
+                        animate={{ scale: [1, 1.1, 1], opacity: [0.4, 0.6, 0.4], x: [0, 30, 0], y: [0, -20, 0] }}
+                        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+                        className="absolute -top-[20%] -right-[10%] w-[50vw] h-[50vw] rounded-full bg-[#EAE3DB] mix-blend-multiply filter blur-3xl"
+                    />
+                    <motion.div
+                        animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.5, 0.3], x: [0, -40, 0], y: [0, 40, 0] }}
+                        transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+                        className="absolute top-[10%] -left-[10%] w-[40vw] h-[40vw] rounded-full bg-[#D0C5B9] mix-blend-multiply filter blur-3xl"
+                    />
+                    <div className="absolute inset-0 bg-white/30 backdrop-blur-[60px]"></div>
+                    <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FDFBF7]/40 to-[#FDFBF7]"></div>
                 </div>
 
                 <div className="relative z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
