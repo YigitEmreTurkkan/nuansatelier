@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Leaf, Info, Instagram, Mail } from 'lucide-react';
+import { ArrowRight, Sparkles, Leaf, Instagram, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 import finishedImg from '../assets/finished.png';
@@ -44,9 +44,6 @@ const Home = () => {
                         Anadolu'nun endemik bitki örtüsünden gelen doğal esanslar ve vegan soya mumlarıyla, yaşam alanlarınızı şifalandırın.
                     </motion.p>
 
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
