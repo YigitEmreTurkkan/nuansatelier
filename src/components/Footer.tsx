@@ -20,7 +20,7 @@ const Footer = () => {
 
                 <div className="flex space-x-6 mb-8 text-sm text-[#5C5A58]">
                     <a href="/hikayemiz" className="hover:text-[#3A3836] transition-colors">Hikayemiz</a>
-                    <a href="/pages/talimatlar" className="hover:text-[#3A3836] transition-colors">Talimatlar</a>
+                    <a href="/pages/talimatlar" className="hover:text-[#3A3836] transition-colors">Kendin Yap Rehberi</a>
                     <a href="https://www.shopier.com/nuansatelier" target="_blank" rel="noopener noreferrer" className="hover:text-[#3A3836] transition-colors">Mağaza</a>
                 </div>
 

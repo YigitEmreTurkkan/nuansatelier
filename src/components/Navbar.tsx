@@ -11,7 +11,7 @@ const Navbar = () => {
     const links = [
         { name: 'Ana Sayfa', path: '/' },
         { name: 'Hikayemiz', path: '/hikayemiz' },
-        { name: 'Talimatlar', path: '/pages/talimatlar' },
+        { name: 'Kendin Yap Rehberi', path: '/pages/talimatlar' },
     ];
 
     return (
