@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Leaf, Instagram, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-import kitImg from '../assets/auth_1.png';
-import finishedImg from '../assets/auth_3.png';
+import kitImg from '../assets/kit.png';
+import finishedImg from '../assets/finished.png';
 
 const Home = () => {
     return (
