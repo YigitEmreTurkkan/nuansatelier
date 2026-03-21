@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Package, Flame, Star, AlertTriangle } from 'lucide-react';
 
-import makingImg from '../assets/making.png';
+import makingImg from '../assets/auth_2.png';
 
 const Instructions = () => {
     return (

@@ -20,7 +20,7 @@ const Navbar = () => {
                 <div className="flex justify-between h-20 items-center">
                     <div className="flex-shrink-0 flex items-center">
                         <Link to="/" className="flex items-center">
-                            <img src={logoImg} alt="Nüans Atelier" className="h-8 md:h-10 w-auto object-contain hover:opacity-80 transition-opacity" />
+                            <img src={logoImg} alt="Nüans Atelier" className="h-12 md:h-16 w-auto object-contain hover:opacity-80 transition-opacity" />
                         </Link>
                     </div>
 
