@@ -47,8 +47,11 @@ const Home = () => {
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.6 }}
-                        className="flex flex-col sm:flex-row gap-4"
+                        className="flex justify-center"
                     >
                         <a
                             href="https://www.shopier.com/nuansatelier"
@@ -58,12 +61,6 @@ const Home = () => {
                         >
                             Ürünlere Git <ArrowRight size={18} />
                         </a>
-                        <Link
-                            to="/pages/talimatlar"
-                            className="px-8 py-4 bg-transparent border border-[#EAE3DB] text-[#5C5A58] rounded-full font-medium hover:bg-[#FDFBF7] hover:shadow-sm transition-all flex items-center justify-center gap-2"
-                        >
-                            Kendin Yap Rehberi <Info size={18} />
-                        </Link>
                     </motion.div>
                 </div>
             </section>
