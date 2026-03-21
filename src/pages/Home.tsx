@@ -34,10 +34,10 @@ const Home = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FDFBF7]/80 backdrop-blur-sm border border-[#EAE3DB] text-[#8A7968] text-sm font-medium"
+                            className="mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FDFBF7]/80 backdrop-blur-sm border border-[#EAE3DB] text-[#8A7968] text-sm font-medium tracking-wide shadow-sm"
                         >
                             <Sparkles size={14} />
-                            DIY Soya Mumu Setleri
+                            Premium Soya Mumu Yapım Kiti
                         </motion.div>
 
                         <motion.h1
@@ -75,8 +75,8 @@ const Home = () => {
                             <div className="flex items-center gap-2 text-sm text-[#8A7968] font-medium ml-1 mt-1">
                                 <Package size={16} /> Tüm siparişlerde ücretsiz kargo
                             </div>
-                            <div className="flex items-center gap-2 text-xs text-[#5C5A58] font-medium mt-2 ml-1 opacity-90 border border-[#EAE3DB] rounded-full px-3 py-1 bg-white/50">
-                                <img src={shopierLogo} alt="Shopier" className="h-3.5 object-contain" />
+                            <div className="flex items-center gap-2 text-sm text-[#5C5A58] font-medium mt-2 ml-1 opacity-90 border border-[#EAE3DB] rounded-full px-4 py-1.5 bg-white/50 shadow-sm">
+                                <img src={shopierLogo} alt="Shopier" className="h-5 object-contain" />
                                 <span>Güvencesiyle</span>
                             </div>
                         </motion.div>
@@ -177,12 +177,12 @@ const Home = () => {
                         Kendin Yap Setini Al <ArrowRight size={18} />
                     </a>
 
-                    <div className="flex items-center justify-center gap-2 text-sm text-[#EAE3DB] opacity-90 font-medium mb-3">
+                    <div className="flex items-center justify-center gap-2 text-sm text-[#EAE3DB] opacity-90 font-medium mb-4">
                         <Package size={16} /> Tüm ürünlerde ücretsiz kargo
                     </div>
 
-                    <div className="flex items-center justify-center gap-2 text-xs text-[#3A3836] font-medium mb-12 bg-[#FDFBF7]/90 px-4 py-1.5 rounded-full shadow-sm backdrop-blur-sm">
-                        <img src={shopierLogo} alt="Shopier" className="h-4 object-contain brightness-0" />
+                    <div className="flex items-center justify-center gap-2 text-sm text-[#3A3836] font-medium mb-12 bg-[#FDFBF7]/90 px-5 py-2 rounded-full shadow-md backdrop-blur-sm">
+                        <img src={shopierLogo} alt="Shopier" className="h-5 object-contain brightness-0" />
                         <span>Güvencesiyle</span>
                     </div>
                 </div>
