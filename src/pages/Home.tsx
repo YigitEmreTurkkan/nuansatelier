@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import kitImg from '../assets/table.png';
 import finishedImg from '../assets/wood_finished.png';
+import shopierLogo from '../assets/shopier.svg';
 
 const Home = () => {
     return (
@@ -73,6 +74,10 @@ const Home = () => {
                             </a>
                             <div className="flex items-center gap-2 text-sm text-[#8A7968] font-medium ml-1 mt-1">
                                 <Package size={16} /> Tüm siparişlerde ücretsiz kargo
+                            </div>
+                            <div className="flex items-center gap-2 text-xs text-[#5C5A58] font-medium mt-2 ml-1 opacity-90 border border-[#EAE3DB] rounded-full px-3 py-1 bg-white/50">
+                                <img src={shopierLogo} alt="Shopier" className="h-3.5 object-contain" />
+                                <span>Güvencesiyle</span>
                             </div>
                         </motion.div>
                     </div>
@@ -172,8 +177,13 @@ const Home = () => {
                         Kendin Yap Setini Al <ArrowRight size={18} />
                     </a>
 
-                    <div className="flex items-center justify-center gap-2 text-sm text-[#EAE3DB] opacity-90 font-medium mb-12">
+                    <div className="flex items-center justify-center gap-2 text-sm text-[#EAE3DB] opacity-90 font-medium mb-3">
                         <Package size={16} /> Tüm ürünlerde ücretsiz kargo
+                    </div>
+
+                    <div className="flex items-center justify-center gap-2 text-xs text-[#3A3836] font-medium mb-12 bg-[#FDFBF7]/90 px-4 py-1.5 rounded-full shadow-sm backdrop-blur-sm">
+                        <img src={shopierLogo} alt="Shopier" className="h-4 object-contain brightness-0" />
+                        <span>Güvencesiyle</span>
                     </div>
                 </div>
 
