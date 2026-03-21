@@ -37,7 +37,7 @@ const Home = () => {
                             className="mb-6 inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FDFBF7]/80 backdrop-blur-sm border border-[#EAE3DB] text-[#8A7968] text-sm font-medium tracking-wide shadow-sm"
                         >
                             <Sparkles size={14} />
-                            Premium Soya Mumu Yapım Kiti
+                            Premium Kendin Yap Setleri
                         </motion.div>
 
                         <motion.h1
