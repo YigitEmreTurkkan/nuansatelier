@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles, Leaf, Instagram, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-import kitImg from '../assets/kit.png';
+import kitImg from '../assets/hero_product.png';
 import finishedImg from '../assets/finished.png';
 
 const Home = () => {
