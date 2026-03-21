@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Leaf, Instagram, Mail } from 'lucide-react';
+import { ArrowRight, Sparkles, Leaf, Instagram, Mail, Package } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 import kitImg from '../assets/table.png';
@@ -61,16 +61,19 @@ const Home = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.6 }}
-                            className="flex justify-center md:justify-start w-full"
+                            className="flex flex-col items-center md:items-start w-full"
                         >
                             <a
                                 href="https://www.shopier.com/nuansatelier"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-8 py-4 bg-[#3A3836] text-[#FDFBF7] rounded-full font-medium hover:bg-[#2A2928] shadow-lg transition-all transform hover:scale-105 flex items-center justify-center gap-2"
+                                className="px-8 mb-2 py-4 bg-[#3A3836] text-[#FDFBF7] rounded-full font-medium hover:bg-[#2A2928] shadow-lg transition-all transform hover:scale-105 inline-flex items-center justify-center gap-2"
                             >
                                 Tüm Setleri İncele <ArrowRight size={18} />
                             </a>
+                            <div className="flex items-center gap-2 text-sm text-[#8A7968] font-medium ml-1 mt-1">
+                                <Package size={16} /> Tüm siparişlerde ücretsiz kargo
+                            </div>
                         </motion.div>
                     </div>
 
@@ -159,16 +162,22 @@ const Home = () => {
                 <p className="max-w-2xl mx-auto mb-10 text-white/80 leading-relaxed font-light">
                     Bu kutu, kendi şifa ritüelinizi, doğadan gelen en saf dokunuşla kendi "an"ınızı yaratmanız için tasarlandı.
                 </p>
-                <a
-                    href="https://www.shopier.com/nuansatelier"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex px-8 py-4 bg-[#FDFBF7] text-[#3A3836] rounded-full font-medium hover:bg-[#EAE3DB] transition-all transform hover:scale-105 items-center gap-2"
-                >
-                    Kendin Yap Setini Al <ArrowRight size={18} />
-                </a>
+                <div className="flex flex-col items-center">
+                    <a
+                        href="https://www.shopier.com/nuansatelier"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex px-8 mb-4 py-4 bg-[#FDFBF7] text-[#3A3836] rounded-full font-medium hover:bg-[#EAE3DB] transition-all transform hover:scale-105 items-center gap-2"
+                    >
+                        Kendin Yap Setini Al <ArrowRight size={18} />
+                    </a>
 
-                <div className="mt-12 flex flex-col md:flex-row items-center justify-center gap-8">
+                    <div className="flex items-center justify-center gap-2 text-sm text-[#EAE3DB] opacity-90 font-medium mb-12">
+                        <Package size={16} /> Tüm ürünlerde ücretsiz kargo
+                    </div>
+                </div>
+
+                <div className="flex flex-col md:flex-row items-center justify-center gap-8">
                     <a href="https://instagram.com/atelier.nuans" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[#FDFBF7] hover:text-[#EAE3DB] opacity-80 hover:opacity-100 transition-all font-light">
                         <Instagram size={20} /> <span className="tracking-wide">@atelier.nuans</span>
                     </a>
