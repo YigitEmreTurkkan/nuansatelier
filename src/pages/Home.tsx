@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <div className="flex flex-col min-h-screen">
             {/* Hero Section */}
-            <section className="relative w-full min-h-[70vh] md:min-h-[60vh] pt-12 md:py-24 flex items-center justify-center overflow-hidden bg-[#FDFBF7]">
+            <section className="relative w-full min-h-[50vh] md:min-h-[60vh] pt-6 md:pt-12 pb-8 md:py-24 flex items-center justify-center overflow-hidden bg-[#FDFBF7]">
                 {/* Premium Aura Background */}
                 <div className="absolute inset-0 z-0 overflow-hidden">
                     <motion.div
@@ -98,7 +98,7 @@ const Home = () => {
                     />
                 </div>
                 
-                <div className="relative z-10 py-4">
+                <div className="relative z-10 py-2 md:py-4">
                     <TrustBadges />
                 </div>
             </section>
