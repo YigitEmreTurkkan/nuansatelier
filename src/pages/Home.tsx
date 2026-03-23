@@ -1,16 +1,18 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Leaf, Instagram, Mail, Package } from 'lucide-react';
+import { ArrowRight, Sparkles, Leaf, Package } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 import kitImg from '../assets/table.png';
 import finishedImg from '../assets/wood_finished.png';
 import shopierLogo from '../assets/shopier.svg';
+import TrustBadges from '../components/TrustBadges';
+import { ShoppingBag, ShieldCheck } from 'lucide-react';
 
 const Home = () => {
     return (
         <div className="flex flex-col min-h-screen">
             {/* Hero Section */}
-            <section className="relative w-full min-h-[60vh] py-24 flex items-center justify-center overflow-hidden bg-[#FDFBF7]">
+            <section className="relative w-full min-h-[70vh] md:min-h-[60vh] pt-12 md:py-24 flex items-center justify-center overflow-hidden bg-[#FDFBF7]">
                 {/* Premium Aura Background */}
                 <div className="absolute inset-0 z-0 overflow-hidden">
                     <motion.div
@@ -27,9 +29,9 @@ const Home = () => {
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FDFBF7]/40 to-[#FDFBF7]"></div>
                 </div>
 
-                <div className="relative z-10 px-4 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
+                <div className="relative z-10 px-4 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
                     {/* Text Column */}
-                    <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+                    <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -44,7 +46,7 @@ const Home = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="text-5xl md:text-7xl font-serif text-[#3A3836] drop-shadow-sm mb-6 leading-tight"
+                            className="text-4xl sm:text-5xl md:text-7xl font-serif text-[#3A3836] drop-shadow-sm mb-4 md:mb-6 leading-tight"
                         >
                             Saflıkla Gelen <br /> <span className="text-[#8A7968]">Dinginlik</span>
                         </motion.h1>
@@ -53,29 +55,32 @@ const Home = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.4 }}
-                            className="text-lg md:text-xl text-[#5C5A58] mb-8 max-w-xl font-light"
+                            className="text-base md:text-xl text-[#5C5A58] mb-8 max-w-xl font-light px-4 md:px-0"
                         >
-                            Kendi mumunuzu yaratarak yaşam alanlarınızı şifalandırın. Tamamen doğal vegan wax ve Anadolu'nun endemik esanslarıyla hazırlanan %100 çevre dostu döküm setleri.
+                            Kendi mumunuzu yaratarak yaşam alanlarınızı şifalandırın. Tamamen doğal vegan wax ve %100 çevre dostu döküm setleri.
                         </motion.p>
 
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.6 }}
-                            className="flex flex-col items-center md:items-start w-full"
+                            className="flex flex-col items-center md:items-start w-full gap-4"
                         >
                             <a
                                 href="http://www.shopier.com/s/store/nuansatelier"
-                                className="px-8 mb-2 py-4 bg-[#3A3836] text-[#FDFBF7] rounded-full font-medium hover:bg-[#2A2928] shadow-lg transition-all transform hover:scale-105 inline-flex items-center justify-center gap-2"
+                                className="w-full sm:w-auto px-8 py-4 bg-[#3A3836] text-[#FDFBF7] rounded-full font-medium hover:bg-[#2A2928] shadow-lg transition-all transform hover:scale-105 inline-flex items-center justify-center gap-2"
                             >
                                 Koleksiyonu Keşfet <ArrowRight size={18} />
                             </a>
-                            <div className="flex items-center gap-2 text-sm text-[#8A7968] font-medium ml-1 mt-1">
-                                <Package size={16} /> Tüm siparişlerde ücretsiz kargo
-                            </div>
-                            <div className="flex items-center gap-2 text-sm text-[#5C5A58] font-medium mt-2 ml-1 opacity-90 border border-[#EAE3DB] rounded-full px-4 py-1.5 bg-white/50 shadow-sm">
-                                <img src={shopierLogo} alt="Shopier" className="h-5 object-contain" />
-                                <span>Güvencesiyle</span>
+                            
+                            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-2">
+                                <div className="flex items-center gap-2 text-xs md:text-sm text-[#8A7968] font-semibold bg-white/40 px-3 py-1.5 rounded-full border border-[#EAE3DB]">
+                                    <Package size={14} /> Ücretsiz kargo
+                                </div>
+                                <div className="flex items-center gap-2 text-xs md:text-sm text-[#5C5A58] font-bold bg-[#FDFBF7] rounded-full px-3 py-1.5 shadow-sm border border-[#EAE3DB]">
+                                    <ShieldCheck size={14} className="text-[#8A7968]" />
+                                    <span>Shopier Güvencesiyle</span>
+                                </div>
                             </div>
                         </motion.div>
                     </div>
@@ -85,9 +90,9 @@ const Home = () => {
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, delay: 0.3 }}
-                        className="md:w-1/2 flex justify-center md:justify-end mt-12 md:mt-0"
+                        className="w-full md:w-1/2 flex justify-center md:justify-end order-1 md:order-2"
                     >
-                        <div className="relative w-full max-w-md">
+                        <div className="relative w-full max-w-[280px] sm:max-w-md">
                             <div className="absolute inset-0 bg-gradient-to-tr from-[#EAE3DB] to-[#D0C5B9] rounded-[2rem] transform rotate-3 scale-105 opacity-60 blur-xl"></div>
                             <img
                                 src={kitImg}
@@ -97,6 +102,11 @@ const Home = () => {
                         </div>
                     </motion.div>
                 </div>
+            </section>
+
+            {/* Trust Signals Strip */}
+            <section className="bg-white/30 backdrop-blur-sm border-y border-[#EAE3DB]/50">
+                <TrustBadges />
             </section>
 
             {/* Philosophy Section */}
@@ -182,16 +192,37 @@ const Home = () => {
                         <span>Güvencesiyle</span>
                     </div>
                 </div>
-
-                <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-                    <a href="https://instagram.com/atelier.nuans" className="flex items-center gap-2 text-[#FDFBF7] hover:text-[#EAE3DB] opacity-80 hover:opacity-100 transition-all font-light">
-                        <Instagram size={20} /> <span className="tracking-wide">@atelier.nuans</span>
-                    </a>
-                    <a href="mailto:info@nuansatelier.com" className="flex items-center gap-2 text-[#FDFBF7] hover:text-[#EAE3DB] opacity-80 hover:opacity-100 transition-all font-light">
-                        <Mail size={20} /> <span className="tracking-wide">info@nuansatelier.com</span>
-                    </a>
-                </div>
             </section>
+
+            {/* Sticky Mobile CTA */}
+            <motion.div
+                initial={{ y: 100 }}
+                animate={{ y: 0 }}
+                transition={{ duration: 0.5, delay: 1 }}
+                className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[60] w-[90%] max-w-md md:hidden"
+            >
+                <a
+                    href="http://www.shopier.com/s/store/nuansatelier"
+                    className="flex h-16 w-full items-center justify-between bg-[#3A3836] text-white rounded-2xl px-6 shadow-[0_12px_30px_-6px_rgba(0,0,0,0.3)] border border-white/10 overflow-hidden group"
+                >
+                    <div className="flex flex-col">
+                        <span className="text-[10px] uppercase tracking-wider text-white/60 font-medium">Hemen Keşfet</span>
+                        <span className="text-sm font-semibold flex items-center gap-1">
+                            Şifa Setini Al <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                        </span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                        <div className="h-8 w-[1px] bg-white/10"></div>
+                        <div className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg border border-white/5">
+                            <ShoppingBag size={14} className="text-white" />
+                            <span className="text-xs font-bold">Mağaza</span>
+                        </div>
+                    </div>
+                    
+                    {/* Progress Fill Background Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#8A7968]/20 to-transparent -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
+                </a>
+            </motion.div>
         </div>
     );
 };
