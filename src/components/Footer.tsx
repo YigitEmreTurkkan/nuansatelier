@@ -1,5 +1,4 @@
 import { Instagram, Mail } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -22,7 +21,7 @@ const Footer = () => {
                 <div className="flex space-x-6 mb-8 text-sm text-[#5C5A58]">
                     <a href="/hikayemiz" className="hover:text-[#3A3836] transition-colors">Hikayemiz</a>
                     <a href="/pages/talimatlar" className="hover:text-[#3A3836] transition-colors">Kendin Yap Rehberi</a>
-                    <Link to="/magaza" className="hover:text-[#3A3836] transition-colors">Mağaza</Link>
+                    <a href="https://www.shopier.com/nuansatelier" className="hover:text-[#3A3836] transition-colors">Mağaza</a>
                 </div>
 
                 <div className="text-[#A3978B] text-xs pt-8 border-t border-[#EAE3DB]/60 w-full text-center">
