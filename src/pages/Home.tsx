@@ -105,8 +105,19 @@ const Home = () => {
             </section>
 
             {/* Trust Signals Strip */}
-            <section className="bg-white/30 backdrop-blur-sm border-y border-[#EAE3DB]/50">
-                <TrustBadges />
+            <section className="relative bg-white/40 backdrop-blur-md border-y border-[#EAE3DB]/50 overflow-hidden">
+                {/* Faint Background Image */}
+                <div className="absolute inset-0 z-0 opacity-[0.08] flex items-center justify-center">
+                    <img 
+                        src={kitImg} 
+                        alt="" 
+                        className="w-full h-full object-cover scale-110 blur-[2px]" 
+                    />
+                </div>
+                
+                <div className="relative z-10 py-4">
+                    <TrustBadges />
+                </div>
             </section>
 
             {/* Philosophy Section */}
