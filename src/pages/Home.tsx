@@ -6,7 +6,7 @@ import kitImg from '../assets/table.png';
 import finishedImg from '../assets/wood_finished.png';
 import shopierLogo from '../assets/shopier.svg';
 import TrustBadges from '../components/TrustBadges';
-import { ShoppingBag, ShieldCheck } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
 
 const Home = () => {
     return (
@@ -214,35 +214,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Sticky Mobile CTA */}
-            <motion.div
-                initial={{ y: 100 }}
-                animate={{ y: 0 }}
-                transition={{ duration: 0.5, delay: 1 }}
-                className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[60] w-[90%] max-w-md md:hidden"
-            >
-                <a
-                    href="http://www.shopier.com/s/store/nuansatelier"
-                    className="flex h-16 w-full items-center justify-between bg-[#3A3836] text-white rounded-2xl px-6 shadow-[0_12px_30px_-6px_rgba(0,0,0,0.3)] border border-white/10 overflow-hidden group"
-                >
-                    <div className="flex flex-col">
-                        <span className="text-[10px] uppercase tracking-wider text-white/60 font-medium">Hemen Keşfet</span>
-                        <span className="text-sm font-semibold flex items-center gap-1">
-                            Şifa Setini Al <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                        </span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                        <div className="h-8 w-[1px] bg-white/10"></div>
-                        <div className="flex items-center gap-1.5 bg-white/10 px-3 py-1.5 rounded-lg border border-white/5">
-                            <ShoppingBag size={14} className="text-white" />
-                            <span className="text-xs font-bold">Mağaza</span>
-                        </div>
-                    </div>
-                    
-                    {/* Progress Fill Background Effect */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#8A7968]/20 to-transparent -translate-x-full group-hover:translate-x-0 transition-transform duration-500"></div>
-                </a>
-            </motion.div>
         </div>
     );
 };
