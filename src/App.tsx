@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Instructions from './pages/Instructions';
 import Story from './pages/Story';
+import ShopRedirect from './pages/ShopRedirect';
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/pages/talimatlar" element={<Instructions />} />
                         <Route path="/hikayemiz" element={<Story />} />
+                        <Route path="/magaza" element={<ShopRedirect />} />
                     </Routes>
                 </main>
                 <Footer />
