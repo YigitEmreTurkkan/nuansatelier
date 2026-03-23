@@ -10,7 +10,7 @@ const Footer = () => {
                 </p>
 
                 <div className="flex gap-6 mb-8 text-[#5C5A58]">
-                    <a href="https://instagram.com/atelier.nuans" target="_blank" rel="noopener noreferrer" className="hover:text-[#3A3836] transition-colors" aria-label="Instagram">
+                    <a href="https://instagram.com/atelier.nuans" className="hover:text-[#3A3836] transition-colors" aria-label="Instagram">
                         <Instagram size={22} />
                     </a>
                     <a href="mailto:nuansateleirx@gmail.com" className="hover:text-[#3A3836] transition-colors" aria-label="Email">
@@ -21,7 +21,7 @@ const Footer = () => {
                 <div className="flex space-x-6 mb-8 text-sm text-[#5C5A58]">
                     <a href="/hikayemiz" className="hover:text-[#3A3836] transition-colors">Hikayemiz</a>
                     <a href="/pages/talimatlar" className="hover:text-[#3A3836] transition-colors">Kendin Yap Rehberi</a>
-                    <a href="https://www.shopier.com/nuansatelier" target="_blank" rel="noopener noreferrer" className="hover:text-[#3A3836] transition-colors">Mağaza</a>
+                    <a href="https://www.shopier.com/nuansatelier" className="hover:text-[#3A3836] transition-colors">Mağaza</a>
                 </div>
 
                 <div className="text-[#A3978B] text-xs pt-8 border-t border-[#EAE3DB]/60 w-full text-center">
