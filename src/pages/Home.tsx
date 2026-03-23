@@ -29,9 +29,9 @@ const Home = () => {
                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#FDFBF7]/40 to-[#FDFBF7]"></div>
                 </div>
 
-                <div className="relative z-10 px-4 max-w-7xl mx-auto flex flex-col items-center text-center">
+                <div className="relative z-10 px-4 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
                     {/* Text Column */}
-                    <div className="w-full max-w-3xl flex flex-col items-center">
+                    <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -64,7 +64,7 @@ const Home = () => {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.6 }}
-                            className="flex flex-col items-center w-full gap-4"
+                            className="flex flex-col items-center md:items-start w-full gap-4"
                         >
                             <a
                                 href="http://www.shopier.com/s/store/nuansatelier"
@@ -73,7 +73,7 @@ const Home = () => {
                                 Koleksiyonu Keşfet <ArrowRight size={18} />
                             </a>
                             
-                            <div className="flex flex-wrap items-center justify-center gap-4 mt-2">
+                            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 mt-2">
                                 <div className="flex items-center gap-2 text-xs md:text-sm text-[#8A7968] font-semibold bg-white/40 px-3 py-1.5 rounded-full border border-[#EAE3DB]">
                                     <Package size={14} /> Ücretsiz kargo
                                 </div>
@@ -84,13 +84,30 @@ const Home = () => {
                             </div>
                         </motion.div>
                     </div>
+
+                    {/* Image Column - Hidden on Mobile, Shown on Desktop */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 1, delay: 0.3 }}
+                        className="hidden md:flex w-1/2 justify-end"
+                    >
+                        <div className="relative w-full max-w-md">
+                            <div className="absolute inset-0 bg-gradient-to-tr from-[#EAE3DB] to-[#D0C5B9] rounded-[2rem] transform rotate-3 scale-105 opacity-60 blur-xl"></div>
+                            <img
+                                src={kitImg}
+                                alt="Nüans Atelier DIY Kendin Yap Soya Mumu Seti"
+                                className="relative z-10 w-full object-cover rounded-[2rem] shadow-2xl border border-white/60"
+                            />
+                        </div>
+                    </motion.div>
                 </div>
             </section>
 
             {/* Trust Signals Strip */}
             <section className="relative bg-white/40 backdrop-blur-md border-y border-[#EAE3DB]/50 overflow-hidden">
-                {/* Faint Background Image */}
-                <div className="absolute inset-0 z-0 opacity-[0.25] flex items-center justify-center">
+                {/* Faint Background Image - Only on Mobile */}
+                <div className="absolute inset-0 z-0 opacity-[0.25] flex items-center justify-center md:hidden">
                     <img 
                         src={kitImg} 
                         alt="" 
@@ -104,14 +121,23 @@ const Home = () => {
             </section>
 
             {/* Philosophy Section */}
-            <section className="py-24 px-4 bg-[#FDFBF7]">
-                <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+            <section className="relative py-20 md:py-24 px-4 bg-[#FDFBF7] overflow-hidden">
+                {/* Faint Background Image - Only on Mobile */}
+                <div className="absolute inset-0 z-0 opacity-[0.12] flex items-center justify-center md:hidden">
+                    <img 
+                        src={finishedImg} 
+                        alt="" 
+                        className="w-full h-full object-cover grayscale-[20%] brightness-110" 
+                    />
+                </div>
+
+                <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-16">
                     <motion.div
                         initial={{ opacity: 0, x: -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="md:w-1/2 flex justify-center"
+                        className="hidden md:flex md:w-1/2 justify-center"
                     >
                         <div className="relative">
                             <div className="absolute inset-0 bg-[#EAE3DB] rounded-[2rem] transform rotate-3 scale-105"></div>
@@ -128,7 +154,7 @@ const Home = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
-                        className="md:w-1/2"
+                        className="w-full md:w-1/2 text-center md:text-left flex flex-col items-center md:items-start"
                     >
                         <h2 className="text-4xl font-serif text-[#3A3836] mb-6">Neden Nüans Atelier?</h2>
                         <p className="text-[#5C5A58] mb-6 leading-relaxed">
