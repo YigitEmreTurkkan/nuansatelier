@@ -65,7 +65,7 @@ const Home = () => {
                             className="flex flex-col items-center md:items-start w-full"
                         >
                             <a
-                                href="https://www.shopier.com/nuansatelier"
+                                href="http://www.shopier.com/s/store/nuansatelier"
                                 className="px-8 mb-2 py-4 bg-[#3A3836] text-[#FDFBF7] rounded-full font-medium hover:bg-[#2A2928] shadow-lg transition-all transform hover:scale-105 inline-flex items-center justify-center gap-2"
                             >
                                 Koleksiyonu Keşfet <ArrowRight size={18} />
@@ -167,7 +167,7 @@ const Home = () => {
                 </p>
                 <div className="flex flex-col items-center">
                     <a
-                        href="https://www.shopier.com/nuansatelier"
+                        href="http://www.shopier.com/s/store/nuansatelier"
                         className="inline-flex px-8 mb-4 py-4 bg-[#FDFBF7] text-[#3A3836] rounded-full font-medium hover:bg-[#EAE3DB] transition-all transform hover:scale-105 items-center gap-2"
                     >
                         Kendin Yap Setini Al <ArrowRight size={18} />

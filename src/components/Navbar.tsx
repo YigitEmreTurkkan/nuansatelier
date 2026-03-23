@@ -38,7 +38,7 @@ const Navbar = () => {
                             </Link>
                         ))}
                         <a
-                            href="https://www.shopier.com/nuansatelier"
+                            href="http://www.shopier.com/s/store/nuansatelier"
                             className="flex items-center gap-2 bg-[#3A3836] hover:bg-[#2A2928] text-[#FDFBF7] px-5 py-2.5 rounded-full text-sm font-medium transition-colors"
                         >
                             <ShoppingBag size={16} />
@@ -70,7 +70,7 @@ const Navbar = () => {
                         </Link>
                     ))}
                     <a
-                        href="https://www.shopier.com/nuansatelier"
+                        href="http://www.shopier.com/s/store/nuansatelier"
                         className="flex items-center justify-center gap-2 w-full bg-[#3A3836] text-[#FDFBF7] px-4 py-3 mt-4 rounded-xl text-md font-medium"
                         onClick={() => setIsOpen(false)}
                     >
