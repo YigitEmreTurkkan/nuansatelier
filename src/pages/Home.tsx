@@ -187,8 +187,8 @@ const Home = () => {
                     <a href="https://instagram.com/atelier.nuans" className="flex items-center gap-2 text-[#FDFBF7] hover:text-[#EAE3DB] opacity-80 hover:opacity-100 transition-all font-light">
                         <Instagram size={20} /> <span className="tracking-wide">@atelier.nuans</span>
                     </a>
-                    <a href="mailto:nuansateleirx@gmail.com" className="flex items-center gap-2 text-[#FDFBF7] hover:text-[#EAE3DB] opacity-80 hover:opacity-100 transition-all font-light">
-                        <Mail size={20} /> <span className="tracking-wide">nuansateleirx@gmail.com</span>
+                    <a href="mailto:info@nuansatelier.com" className="flex items-center gap-2 text-[#FDFBF7] hover:text-[#EAE3DB] opacity-80 hover:opacity-100 transition-all font-light">
+                        <Mail size={20} /> <span className="tracking-wide">info@nuansatelier.com</span>
                     </a>
                 </div>
             </section>

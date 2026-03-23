@@ -13,7 +13,7 @@ const Footer = () => {
                     <a href="https://instagram.com/atelier.nuans" className="hover:text-[#3A3836] transition-colors" aria-label="Instagram">
                         <Instagram size={22} />
                     </a>
-                    <a href="mailto:nuansateleirx@gmail.com" className="hover:text-[#3A3836] transition-colors" aria-label="Email">
+                    <a href="mailto:info@nuansatelier.com" className="hover:text-[#3A3836] transition-colors" aria-label="Email">
                         <Mail size={22} />
                     </a>
                 </div>
